@@ -1,0 +1,67 @@
+[
+  {
+    "file": "assets/videos/controlled.mp4",
+    "preview": "assets/images/controlled.jpg",
+    "source": "experiments/blendshape_robot_flame_simulator/outputs/test_comparison/side_by_side.mp4",
+    "source_sha256": "d0152f87d84a76a4cae583aa6993fab68d58840b57c50058e75ea0a248a28422",
+    "sha256": "956b6337b0297b6e0e8e3c9e1d58ddd7dfa33e5738c4e960e4163efb2a6f7ae2",
+    "bytes": 536007,
+    "duration_sec": 24.029204,
+    "width": 1536,
+    "height": 256,
+    "audio": "removed: lab microphone and voice rights not redistributed",
+    "columns": [
+      "Real robot",
+      "Hybrid target",
+      "Pretrained static",
+      "Static + static residual",
+      "Temporal scratch",
+      "Static + temporal residual"
+    ],
+    "protocol": "Existing review render; display fps is not used to recover the recorded command timeline",
+    "trim": "First 24 seconds",
+    "scope": "Rendered research illustration, not a redistributed mesh/model/texture or licensed commercial asset"
+  },
+  {
+    "file": "assets/videos/speech_natural.mp4",
+    "preview": "assets/images/speech_natural.jpg",
+    "source": "experiments/speech_v2_robot_syncnet3d/outputs/simulator_validation/S2N015/side_by_side.mp4",
+    "source_sha256": "e1add66a217d7df918892a09aa7426fc869e830c0019a4aa28374cfe2ba42e71",
+    "sha256": "ddefbe0e3ad11a2959590b88a1f58cdf518f7180ff617d982a8e73b1c066e805",
+    "bytes": 291378,
+    "duration_sec": 6.019595,
+    "width": 1536,
+    "height": 384,
+    "audio": "removed: lab microphone and voice rights not redistributed",
+    "columns": [
+      "Real robot",
+      "Hybrid target",
+      "Frozen V1",
+      "Speech-v2 adapted"
+    ],
+    "protocol": "Existing review render; display fps is not used to recover the recorded command timeline",
+    "trim": "Full existing review clip",
+    "scope": "Rendered research illustration, not a redistributed mesh/model/texture or licensed commercial asset"
+  },
+  {
+    "file": "assets/videos/speech_bilabial.mp4",
+    "preview": "assets/images/speech_bilabial.jpg",
+    "source": "experiments/speech_v2_robot_syncnet3d/outputs/simulator_validation/S2B007/side_by_side.mp4",
+    "source_sha256": "b43c2f0fa98610398d27a4d106b80ca777df76334cce5e616e3bd8b940a0f424",
+    "sha256": "443fbf5d2364eaac75db045d77cfeefeb38bb1e64e8032671314f7011aa41080",
+    "bytes": 225366,
+    "duration_sec": 4.088614,
+    "width": 1536,
+    "height": 384,
+    "audio": "removed: lab microphone and voice rights not redistributed",
+    "columns": [
+      "Real robot",
+      "Hybrid target",
+      "Frozen V1",
+      "Speech-v2 adapted"
+    ],
+    "protocol": "Existing review render; display fps is not used to recover the recorded command timeline",
+    "trim": "Full existing review clip",
+    "scope": "Rendered research illustration, not a redistributed mesh/model/texture or licensed commercial asset"
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "pairs": 56,
+  "samples": 8,
+  "target_offset_ms": 0,
+  "threshold_from_val": 0.13261127471923828,
+  "auc": 0.9505208333333334,
+  "accuracy": 0.8214285714285714,
+  "balanced_accuracy": 0.8958333333333333,
+  "target_offset_top1_rate": 0.75,
+  "mean_abs_offset_error_ms": 25.0,
+  "category_metrics": {
+    "bilabial": {
+      "samples": 2,
+      "auc": 1.0,
+      "balanced_accuracy": 0.9166666666666667,
+      "target_offset_top1_rate": 1.0
+    },
+    "normal": {
+      "samples": 3,
+      "auc": 0.9444444444444444,
+      "balanced_accuracy": 0.8888888888888888,
+      "target_offset_top1_rate": 0.6666666666666666
+    },
+    "vowel": {
+      "samples": 3,
+      "auc": 0.9074074074074076,
+      "balanced_accuracy": 0.8888888888888888,
+      "target_offset_top1_rate": 0.6666666666666666
+    }
+  },
+  "offset_curve": [
+    {
+      "offset_ms": -400,
+      "mean_distance": 13.49983537197113,
+      "std_distance": 1.292902697672196,
+      "count": 8
+    },
+    {
+      "offset_ms": -200,
+      "mean_distance": 12.974574208259583,
+      "std_distance": 1.244892726856348,
+      "count": 8
+    },
+    {
+      "offset_ms": -100,
+      "mean_distance": 12.809569001197815,
+      "std_distance": 1.1064728534818866,
+      "count": 8
+    },
+    {
+      "offset_ms": 0,
+      "mean_distance": 12.676181316375732,
+      "std_distance": 1.2069152365514144,
+      "count": 8
+    },
+    {
+      "offset_ms": 100,
+      "mean_distance": 12.854779481887817,
+      "std_distance": 1.145330673219969,
+      "count": 8
+    },
+    {
+      "offset_ms": 200,
+      "mean_distance": 13.13026773929596,
+      "std_distance": 1.191505056899964,
+      "count": 8
+    },
+    {
+      "offset_ms": 400,
+      "mean_distance": 13.127367854118347,
+      "std_distance": 1.234930633600178,
+      "count": 8
+    }
+  ],
+  "validation_balanced_accuracy_at_selected_threshold": 0.9166666666666667
+}

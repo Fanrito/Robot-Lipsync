@@ -1,0 +1,40 @@
+{
+  "num_pairs_ok": 594,
+  "num_samples_ok": 54,
+  "auc": 0.978840877914952,
+  "best_threshold": 1.6211442947387695,
+  "sync_async_accuracy_at_best_threshold": 0.9663299663299664,
+  "offset0_highest_score_rate": 0.9814814814814815,
+  "mean_abs_estimated_offset_error_ms": 530.976430976431,
+  "category_wise": {
+    "bilabial": {
+      "pairs": 198,
+      "samples": 18,
+      "auc": 0.9469135802469136,
+      "best_threshold": 2.0801749229431152,
+      "sync_async_accuracy_at_best_threshold": 0.9494949494949495,
+      "offset0_highest_score_rate": 0.9444444444444444
+    },
+    "normal": {
+      "pairs": 198,
+      "samples": 18,
+      "auc": 1.0,
+      "best_threshold": 1.3692636489868164,
+      "sync_async_accuracy_at_best_threshold": 1.0,
+      "offset0_highest_score_rate": 1.0
+    },
+    "vowel": {
+      "pairs": 198,
+      "samples": 18,
+      "auc": 0.9996913580246913,
+      "best_threshold": 1.3578176498413086,
+      "sync_async_accuracy_at_best_threshold": 0.9949494949494949,
+      "offset0_highest_score_rate": 1.0
+    }
+  },
+  "notes": [
+    "SyncNet confidence is used as score; higher is treated as more synchronous.",
+    "The binary threshold is selected on this evaluation set because the original SyncNet demo does not provide a universal sync/async threshold.",
+    "estimated_offset_ms is SyncNet's frame offset multiplied by 40 ms/frame at 25 fps."
+  ]
+}

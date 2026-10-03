@@ -1,0 +1,13 @@
+{
+  "experiment": "sync2d_upstream_crop",
+  "model": "Original SyncNet weights",
+  "domain": "real_camera_audio",
+  "spatial_protocol": "upstream_S3FD_crop",
+  "samples": 8,
+  "pairs": "",
+  "auc": 0.4115,
+  "balanced_accuracy": 0.5208,
+  "zero_top1": 0.0,
+  "offset_mae_ms": 262.5,
+  "notes": "Rounded values from experiment report only; original metrics JSON no longer present; min_track=10."
+}

@@ -1,0 +1,512 @@
+{
+  "group": "ordered",
+  "best_epoch": 3,
+  "context_ms": 600,
+  "architecture_changed": false,
+  "pretrained_transfer": false,
+  "split": {
+    "train": 154,
+    "val": 34,
+    "test": 31
+  },
+  "val": {
+    "binary": {
+      "auc": 0.6657317535374143,
+      "balanced_accuracy": 0.6308154903515728,
+      "count": 16393
+    },
+    "threshold": 0.3547687331835429,
+    "sequence": {
+      "utterances": 34,
+      "zero_ms_top1": 0.20588235294117646,
+      "offset_mae_ms": 72.94117647058823,
+      "predicted_offset_distribution": {
+        "-800": 0,
+        "-400": 0,
+        "-200": 1,
+        "-120": 5,
+        "-80": 5,
+        "-40": 2,
+        "0": 7,
+        "40": 5,
+        "80": 6,
+        "120": 1,
+        "200": 2,
+        "400": 0,
+        "800": 0
+      }
+    },
+    "offset_curve": {
+      "-800": {
+        "mean": 0.30503965807306116,
+        "median": 0.3047095835208893,
+        "utterance_mean": 0.30335178741631025,
+        "utterance_median": 0.3033549317619716,
+        "std": 0.04854310455078697,
+        "sequences": 1261
+      },
+      "-400": {
+        "mean": 0.31397158064651265,
+        "median": 0.3102463036775589,
+        "utterance_mean": 0.3152398754954316,
+        "utterance_median": 0.31264805198896173,
+        "std": 0.04964437225002492,
+        "sequences": 1261
+      },
+      "-200": {
+        "mean": 0.34142469868217545,
+        "median": 0.3405953248341878,
+        "utterance_mean": 0.34105562013535784,
+        "utterance_median": 0.33909738078140295,
+        "std": 0.04870657197382541,
+        "sequences": 1261
+      },
+      "-120": {
+        "mean": 0.36214740829605796,
+        "median": 0.3609142204125722,
+        "utterance_mean": 0.3636820749774788,
+        "utterance_median": 0.3635539340663423,
+        "std": 0.048155012375677694,
+        "sequences": 1261
+      },
+      "-80": {
+        "mean": 0.3701516546815153,
+        "median": 0.3698182205359141,
+        "utterance_mean": 0.3719000035640077,
+        "utterance_median": 0.37384560007464007,
+        "std": 0.04766063714365414,
+        "sequences": 1261
+      },
+      "-40": {
+        "mean": 0.3753277681750215,
+        "median": 0.3744489053885142,
+        "utterance_mean": 0.37708429809184496,
+        "utterance_median": 0.3789066468111494,
+        "std": 0.04751758311596417,
+        "sequences": 1261
+      },
+      "0": {
+        "mean": 0.378071934272302,
+        "median": 0.3775609532992045,
+        "utterance_mean": 0.37929756532093817,
+        "utterance_median": 0.3817816547146349,
+        "std": 0.04798827188237223,
+        "sequences": 1261
+      },
+      "40": {
+        "mean": 0.3773672378216035,
+        "median": 0.3771023352940877,
+        "utterance_mean": 0.3785485705538143,
+        "utterance_median": 0.3792413872508054,
+        "std": 0.049423592023931734,
+        "sequences": 1261
+      },
+      "80": {
+        "mean": 0.37311393743961413,
+        "median": 0.3718718687693278,
+        "utterance_mean": 0.3742469497950853,
+        "utterance_median": 0.3754258130466466,
+        "std": 0.05092731476532699,
+        "sequences": 1261
+      },
+      "120": {
+        "mean": 0.3655358504739319,
+        "median": 0.3636273145675659,
+        "utterance_mean": 0.3658788352222788,
+        "utterance_median": 0.3663583893159574,
+        "std": 0.051801952914995245,
+        "sequences": 1261
+      },
+      "200": {
+        "mean": 0.34813216512177375,
+        "median": 0.3450106779734294,
+        "utterance_mean": 0.3463142320098149,
+        "utterance_median": 0.3397829836644299,
+        "std": 0.05381558621150607,
+        "sequences": 1261
+      },
+      "400": {
+        "mean": 0.31456655114416465,
+        "median": 0.31134768823782605,
+        "utterance_mean": 0.3155912614050011,
+        "utterance_median": 0.31573303998548746,
+        "std": 0.0500849939829117,
+        "sequences": 1261
+      },
+      "800": {
+        "mean": 0.30626562249950406,
+        "median": 0.30509718755880993,
+        "utterance_mean": 0.30554144738496736,
+        "utterance_median": 0.3053960343098475,
+        "std": 0.048329807416326725,
+        "sequences": 1261
+      }
+    },
+    "hard_negative": {
+      "+-40ms": {
+        "auc": 0.5102507922353079,
+        "balanced_accuracy": 0.5154639175257731,
+        "count": 3783
+      },
+      "+-80ms": {
+        "auc": 0.5379716386363049,
+        "balanced_accuracy": 0.5342981760507534,
+        "count": 3783
+      },
+      "+-120ms": {
+        "auc": 0.5828550154359322,
+        "balanced_accuracy": 0.5719666931007137,
+        "count": 3783
+      },
+      "+-200ms": {
+        "auc": 0.6852678192414289,
+        "balanced_accuracy": 0.6451229183187945,
+        "count": 3783
+      },
+      "+-400ms": {
+        "auc": 0.8223022021594584,
+        "balanced_accuracy": 0.7450436161776368,
+        "count": 3783
+      },
+      "+-800ms": {
+        "auc": 0.8557430535160532,
+        "balanced_accuracy": 0.7729976209357652,
+        "count": 3783
+      }
+    },
+    "near_offset_margins": {
+      "+-40ms": {
+        "mean": 0.0017244312739895353,
+        "median": 0.0014166360100110464,
+        "positive_fraction": 0.5376685170499603,
+        "utterance_mean": 0.001481130998108504,
+        "utterance_median": 0.00214784449841815,
+        "utterance_positive_fraction": 0.5882352941176471
+      },
+      "+-80ms": {
+        "mean": 0.006439138211737289,
+        "median": 0.006587967276573153,
+        "positive_fraction": 0.5896114195083267,
+        "utterance_mean": 0.006224088641391637,
+        "utterance_median": 0.006658226200889211,
+        "utterance_positive_fraction": 0.6176470588235294
+      },
+      "+-120ms": {
+        "mean": 0.014230304887307059,
+        "median": 0.013755361239115388,
+        "positive_fraction": 0.6383822363203806,
+        "utterance_mean": 0.014517110221059297,
+        "utterance_median": 0.015049962189056354,
+        "utterance_positive_fraction": 0.7352941176470589
+      },
+      "+-200ms": {
+        "mean": 0.03329350237032739,
+        "median": 0.032477195064226805,
+        "positive_fraction": 0.7335448057097541,
+        "utterance_mean": 0.0356126392483518,
+        "utterance_median": 0.038369625530343315,
+        "utterance_positive_fraction": 0.8676470588235294
+      },
+      "+-400ms": {
+        "mean": 0.06380286837696336,
+        "median": 0.06354979425668716,
+        "positive_fraction": 0.8421887390959556,
+        "utterance_mean": 0.06388199687072181,
+        "utterance_median": 0.06889473760831089,
+        "utterance_positive_fraction": 0.9852941176470589
+      },
+      "+-800ms": {
+        "mean": 0.07241929398601943,
+        "median": 0.06858281046152115,
+        "positive_fraction": 0.8544805709754163,
+        "utterance_mean": 0.07485094792029934,
+        "utterance_median": 0.0693522923077399,
+        "utterance_positive_fraction": 1.0
+      }
+    },
+    "by_category": {
+      "natural": {
+        "auc": 0.6600602555472893,
+        "balanced_accuracy": 0.6287227949599083,
+        "count": 7566,
+        "utterances": 13,
+        "zero_ms_top1": 0.3076923076923077,
+        "offset_mae_ms": 70.76923076923077
+      },
+      "bilabial_dense": {
+        "auc": 0.6700959382233798,
+        "balanced_accuracy": 0.6341145833333333,
+        "count": 2496,
+        "utterances": 7,
+        "zero_ms_top1": 0.14285714285714285,
+        "offset_mae_ms": 80.0
+      },
+      "vowel_contrast": {
+        "auc": 0.657548,
+        "balanced_accuracy": 0.6238333333333334,
+        "count": 3250,
+        "utterances": 7,
+        "zero_ms_top1": 0.2857142857142857,
+        "offset_mae_ms": 74.28571428571429
+      },
+      "articulation_transition": {
+        "auc": 0.6835265003827734,
+        "balanced_accuracy": 0.6406469760900141,
+        "count": 3081,
+        "utterances": 7,
+        "zero_ms_top1": 0.0,
+        "offset_mae_ms": 68.57142857142857
+      }
+    }
+  },
+  "test": {
+    "binary": {
+      "auc": 0.6598464784591807,
+      "balanced_accuracy": 0.6229641693811074,
+      "count": 27937
+    },
+    "threshold": 0.3547687331835429,
+    "sequence": {
+      "utterances": 31,
+      "zero_ms_top1": 0.1935483870967742,
+      "offset_mae_ms": 69.6774193548387,
+      "predicted_offset_distribution": {
+        "-800": 0,
+        "-400": 0,
+        "-200": 1,
+        "-120": 4,
+        "-80": 4,
+        "-40": 5,
+        "0": 6,
+        "40": 4,
+        "80": 3,
+        "120": 3,
+        "200": 1,
+        "400": 0,
+        "800": 0
+      }
+    },
+    "offset_curve": {
+      "-800": {
+        "mean": 0.31605938707735626,
+        "median": 0.316691850622495,
+        "utterance_mean": 0.3128571016940265,
+        "utterance_median": 0.3139958805981136,
+        "std": 0.05081530583065278,
+        "sequences": 2149
+      },
+      "-400": {
+        "mean": 0.3137884864605858,
+        "median": 0.31034807364145917,
+        "utterance_mean": 0.3081707024771875,
+        "utterance_median": 0.308165865663056,
+        "std": 0.0506631252639933,
+        "sequences": 2149
+      },
+      "-200": {
+        "mean": 0.35128424694894245,
+        "median": 0.3517707288265228,
+        "utterance_mean": 0.34110129110960014,
+        "utterance_median": 0.350742268247333,
+        "std": 0.05205261757252183,
+        "sequences": 2149
+      },
+      "-120": {
+        "mean": 0.3693658913651399,
+        "median": 0.37027424573898315,
+        "utterance_mean": 0.3616175293907965,
+        "utterance_median": 0.3716905911763508,
+        "std": 0.051387473556226124,
+        "sequences": 2149
+      },
+      "-80": {
+        "mean": 0.3767211483451994,
+        "median": 0.37666746973991394,
+        "utterance_mean": 0.3711368582605956,
+        "utterance_median": 0.38140146363349187,
+        "std": 0.050637286694002616,
+        "sequences": 2149
+      },
+      "-40": {
+        "mean": 0.38149573706403633,
+        "median": 0.381133774916331,
+        "utterance_mean": 0.3781729423622906,
+        "utterance_median": 0.3851236370734838,
+        "std": 0.05034084298059685,
+        "sequences": 2149
+      },
+      "0": {
+        "mean": 0.38270209185468224,
+        "median": 0.3811447024345398,
+        "utterance_mean": 0.3814719768157568,
+        "utterance_median": 0.38148357019279944,
+        "std": 0.050281113677629434,
+        "sequences": 2149
+      },
+      "40": {
+        "mean": 0.3803643772925483,
+        "median": 0.37880895535151166,
+        "utterance_mean": 0.3805503584823303,
+        "utterance_median": 0.37818411322069817,
+        "std": 0.05114808550038173,
+        "sequences": 2149
+      },
+      "80": {
+        "mean": 0.37420340686948683,
+        "median": 0.3726179301738739,
+        "utterance_mean": 0.3753319263238375,
+        "utterance_median": 0.3761995290817857,
+        "std": 0.053168038320823126,
+        "sequences": 2149
+      },
+      "120": {
+        "mean": 0.3661374497759411,
+        "median": 0.3635132114092509,
+        "utterance_mean": 0.3673885984636786,
+        "utterance_median": 0.3690372369592152,
+        "std": 0.055006777026019665,
+        "sequences": 2149
+      },
+      "200": {
+        "mean": 0.35003529513424936,
+        "median": 0.3468259672323863,
+        "utterance_mean": 0.34863629899987125,
+        "utterance_median": 0.33821561709902753,
+        "std": 0.05593219196219252,
+        "sequences": 2149
+      },
+      "400": {
+        "mean": 0.3205569144219914,
+        "median": 0.3175884584585826,
+        "utterance_mean": 0.3160494818241268,
+        "utterance_median": 0.3144903887063265,
+        "std": 0.04893128148073911,
+        "sequences": 2149
+      },
+      "800": {
+        "mean": 0.3112176492237039,
+        "median": 0.3109694222609202,
+        "utterance_mean": 0.3066506382195569,
+        "utterance_median": 0.3125397668530544,
+        "std": 0.04977066936069299,
+        "sequences": 2149
+      }
+    },
+    "hard_negative": {
+      "+-40ms": {
+        "auc": 0.5094592569704091,
+        "balanced_accuracy": 0.5083759888320148,
+        "count": 6447
+      },
+      "+-80ms": {
+        "auc": 0.5385917589987963,
+        "balanced_accuracy": 0.5298976268031642,
+        "count": 6447
+      },
+      "+-120ms": {
+        "auc": 0.5804285586530339,
+        "balanced_accuracy": 0.5644485807352256,
+        "count": 6447
+      },
+      "+-200ms": {
+        "auc": 0.6697207419079421,
+        "balanced_accuracy": 0.6279664960446719,
+        "count": 6447
+      },
+      "+-400ms": {
+        "auc": 0.8251594073103358,
+        "balanced_accuracy": 0.7523266635644486,
+        "count": 6447
+      },
+      "+-800ms": {
+        "auc": 0.8357191469145671,
+        "balanced_accuracy": 0.7547696603071196,
+        "count": 6447
+      }
+    },
+    "near_offset_margins": {
+      "+-40ms": {
+        "mean": 0.0017720346763898773,
+        "median": 0.001670298477013915,
+        "positive_fraction": 0.5381572824569567,
+        "utterance_mean": 0.002110326393446241,
+        "utterance_median": 0.0016526072120769675,
+        "utterance_positive_fraction": 0.5967741935483871
+      },
+      "+-80ms": {
+        "mean": 0.007239814247339108,
+        "median": 0.006950860222180694,
+        "positive_fraction": 0.5844578873894835,
+        "utterance_mean": 0.008237584523540245,
+        "utterance_median": 0.006988225992591635,
+        "utterance_positive_fraction": 0.6774193548387096
+      },
+      "+-120ms": {
+        "mean": 0.014950421284141698,
+        "median": 0.013429279128710447,
+        "positive_fraction": 0.6302931596091205,
+        "utterance_mean": 0.016968912888519164,
+        "utterance_median": 0.015700841259636084,
+        "utterance_positive_fraction": 0.7419354838709677
+      },
+      "+-200ms": {
+        "mean": 0.0320423208130863,
+        "median": 0.03040282179911931,
+        "positive_fraction": 0.7138203815728246,
+        "utterance_mean": 0.03660318176102105,
+        "utterance_median": 0.039525144737520335,
+        "utterance_positive_fraction": 0.8548387096774194
+      },
+      "+-400ms": {
+        "mean": 0.06552939141339362,
+        "median": 0.06424315273761746,
+        "positive_fraction": 0.847603536528618,
+        "utterance_mean": 0.06936188466509963,
+        "utterance_median": 0.06905671031702135,
+        "utterance_positive_fraction": 1.0
+      },
+      "+-800ms": {
+        "mean": 0.06906357370415214,
+        "median": 0.06320831427971521,
+        "positive_fraction": 0.8308515588645882,
+        "utterance_mean": 0.07171810685896511,
+        "utterance_median": 0.06316276159207748,
+        "utterance_positive_fraction": 1.0
+      }
+    },
+    "by_category": {
+      "natural": {
+        "auc": 0.6692008147006775,
+        "balanced_accuracy": 0.6329575596816976,
+        "count": 14703,
+        "utterances": 13,
+        "zero_ms_top1": 0.15384615384615385,
+        "offset_mae_ms": 70.76923076923077
+      },
+      "bilabial_dense": {
+        "auc": 0.635720497638353,
+        "balanced_accuracy": 0.5989789196310935,
+        "count": 3289,
+        "utterances": 6,
+        "zero_ms_top1": 0.16666666666666666,
+        "offset_mae_ms": 73.33333333333333
+      },
+      "vowel_contrast": {
+        "auc": 0.6948652642601646,
+        "balanced_accuracy": 0.6323435504469987,
+        "count": 3393,
+        "utterances": 6,
+        "zero_ms_top1": 0.3333333333333333,
+        "offset_mae_ms": 40.0
+      },
+      "articulation_transition": {
+        "auc": 0.6347805518812464,
+        "balanced_accuracy": 0.6077215608465609,
+        "count": 6552,
+        "utterances": 6,
+        "zero_ms_top1": 0.16666666666666666,
+        "offset_mae_ms": 93.33333333333333
+      }
+    }
+  }
+}

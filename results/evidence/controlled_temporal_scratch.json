@@ -1,0 +1,34 @@
+{
+  "frames": 3374,
+  "expression_mae": 0.14878299832344055,
+  "jaw_mae": 0.0034458248410373926,
+  "full_vertex_mae": 9.99003677861765e-05,
+  "mouth_vertex_mae": 0.0004014938895124942,
+  "jaw_open_axis_correlation": 0.9503994018575822,
+  "descriptors": {
+    "inner_lip_open": {
+      "correlation": 0.40646229919561444,
+      "mae": 0.003922716248780489,
+      "amplitude_ratio": 0.4852781836108232
+    },
+    "outer_lip_open": {
+      "correlation": 0.9155898177954812,
+      "mae": 0.004443911369889975,
+      "amplitude_ratio": 0.6694217892212535
+    },
+    "mouth_width": {
+      "correlation": 0.6931702805956811,
+      "mae": 0.003504930529743433,
+      "amplitude_ratio": 0.4697931035620824
+    },
+    "asymmetry": {
+      "correlation": 0.5899445435274849,
+      "mae": 0.0016274907393381,
+      "amplitude_ratio": 1.0092355190495674
+    }
+  },
+  "temporal": {
+    "velocity_rmse": 0.06314662174237141,
+    "acceleration_rmse": 2.2477598082681016
+  }
+}

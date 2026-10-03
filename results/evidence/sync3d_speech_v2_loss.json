@@ -1,0 +1,106 @@
+{
+  "checkpoint_epoch": 3,
+  "val_threshold": 0.02949308604001999,
+  "test_binary": {
+    "auc": 0.5784449584624435,
+    "balanced_accuracy": 0.5602435116016544,
+    "count": 45545
+  },
+  "test_sequence": {
+    "utterances": 31,
+    "zero_ms_top1": 0.5483870967741935,
+    "offset_mae_ms": 87.74193548387096,
+    "predicted_offsets_ms": [
+      0,
+      0,
+      -120,
+      0,
+      -120,
+      -120,
+      80,
+      40,
+      -800,
+      0,
+      200,
+      200,
+      0,
+      0,
+      0,
+      0,
+      200,
+      0,
+      0,
+      0,
+      0,
+      -80,
+      0,
+      -120,
+      0,
+      200,
+      40,
+      0,
+      -400,
+      0,
+      0
+    ],
+    "zero_vs_best_nonzero_score_gap": -0.000929360031698963,
+    "lse_d": 0.9239917003574366,
+    "lse_c": 0.010651067519013253
+  },
+  "hard_negatives": {
+    "\u00b140ms": {
+      "auc": 0.5078372850040817,
+      "balanced_accuracy": 0.5055055921565644,
+      "count": 11035
+    },
+    "\u00b180ms": {
+      "auc": 0.520966103167685,
+      "balanced_accuracy": 0.5126860115646293,
+      "count": 10973
+    },
+    "\u00b1120ms": {
+      "auc": 0.5394982222264206,
+      "balanced_accuracy": 0.5261601597589671,
+      "count": 10911
+    },
+    "\u00b1200ms": {
+      "auc": 0.5832662242616973,
+      "balanced_accuracy": 0.5631976749862845,
+      "count": 10787
+    }
+  },
+  "by_category": {
+    "natural": {
+      "auc": 0.5885816878236867,
+      "balanced_accuracy": 0.563270106063362,
+      "count": 22087,
+      "zero_ms_top1": 0.7692307692307693,
+      "offset_mae_ms": 30.76923076923077,
+      "utterances": 13
+    },
+    "bilabial_dense": {
+      "auc": 0.5500657516764618,
+      "balanced_accuracy": 0.5406372732538427,
+      "count": 6697,
+      "zero_ms_top1": 0.16666666666666666,
+      "offset_mae_ms": 220.0,
+      "utterances": 6
+    },
+    "vowel_contrast": {
+      "auc": 0.5862210910005028,
+      "balanced_accuracy": 0.5680914061428768,
+      "count": 6801,
+      "zero_ms_top1": 0.5,
+      "offset_mae_ms": 106.66666666666667,
+      "utterances": 6
+    },
+    "articulation_transition": {
+      "auc": 0.5713727398394659,
+      "balanced_accuracy": 0.5613397625242074,
+      "count": 9960,
+      "zero_ms_top1": 0.5,
+      "offset_mae_ms": 60.0,
+      "utterances": 6
+    }
+  }
+}

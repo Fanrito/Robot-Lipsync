@@ -1,0 +1,115 @@
+{
+  "policy": "Relative archive identifiers and SHA256 only; archive files are not bundled. Selected numeric fields and original project bodies only.",
+  "sources": [
+    {
+      "source": "models/blendshape_robot_flame.py",
+      "sha256": "fb58c789f4da19ab17772bf6d26c79ac51e5c343448f9ba1ebd71f9c6804af53",
+      "bytes": 16072
+    },
+    {
+      "source": "experiments/blendshape_robot_flame_simulator/scripts/train_and_evaluate.py",
+      "sha256": "373ebfa0d1eecb4207b588069e346d726d2c98697da62d9f4d8f6c04dc76cf6d",
+      "bytes": 24824
+    },
+    {
+      "source": "experiments/robot_syncnet_sequence/eval_sequence_protocol.py",
+      "sha256": "3698be47107fa44fe99ced998ab463def27cbdbe0fcc847b51bd6264a160589f",
+      "bytes": 17257
+    },
+    {
+      "source": "results/original_syncnet_session_20260612_002738_recorded_audio/metrics.json",
+      "sha256": "6d204400279afe1b4c23c2f2ed68ef79a36656c4804296379b2fca430f55889f",
+      "bytes": 1383
+    },
+    {
+      "source": "results/sequence_protocol_stage2/full_frame/real/metrics.json",
+      "sha256": "302536a2bbd7051bfa13e07a09f4d7660773efad143f62023e5d06ddb89ea3dc",
+      "bytes": 1871
+    },
+    {
+      "source": "results/sequence_protocol_stage2/full_frame/real/val_curve_rows.csv",
+      "sha256": "f0272024ee980f9d3918ecab5784f7f19c05d5921c10411f507fea23c2c6b741",
+      "bytes": 7848
+    },
+    {
+      "source": "results/sequence_protocol_stage2/full_frame/real/test_curve_rows.csv",
+      "sha256": "8e9096e0dbdd4f7f2470cfe441efd13f7888627e94cd6b80583af4d15c20b9ba",
+      "bytes": 7829
+    },
+    {
+      "source": "results/sequence_protocol_stage2/face_crop/real/metrics.json",
+      "sha256": "1b041502a692e6437ca752485acdbd35ffa13af9839eecf5bf0d0cdc1da16578",
+      "bytes": 1849
+    },
+    {
+      "source": "results/sequence_protocol_stage2/mouth_roi/real/metrics.json",
+      "sha256": "1e03f31bf322c11d777f26f42ce7d5784e79ee648e2eff6c5df0cf4399cc8408",
+      "bytes": 1822
+    },
+    {
+      "source": "results/sequence_protocol_robot_syncnet_v2/full_frame/real/metrics.json",
+      "sha256": "0867ecd6c2cbc1c9e8431923661c5de90a58626d815393800fd5adb098b9d53c",
+      "bytes": 1842
+    },
+    {
+      "source": "experiments/robot_syncnet_sequence/\u5b9e\u9a8c\u8bb0\u5f55.md",
+      "sha256": "01af2931a03e53b96dc2e6c6d6a8b0c9c7c05fa753e7ffd09429cdd0f58f9c72",
+      "bytes": 9100
+    },
+    {
+      "source": "results/speech_v2_robot_syncnet3d/metrics/metrics.json",
+      "sha256": "fa78b37fa2f9aeca19ebffeb14e188b2a6b8334769cacfbb7a46851c889bb1cb",
+      "bytes": 36262
+    },
+    {
+      "source": "results/robot_syncnet_temporal_resolution/ordered_ranking/metrics.json",
+      "sha256": "affaf942caa33e879c4f1e62cc7c6827ba59e14484705dad082243eae671064f",
+      "bytes": 16535
+    },
+    {
+      "source": "experiments/blendshape_robot_flame_simulator/runs/static/metrics.json",
+      "sha256": "862c4e035e0062f3d218d8cae2a487586a2f888fbfa2546f7986bb2805a2ab2d",
+      "bytes": 2351
+    },
+    {
+      "source": "experiments/blendshape_robot_flame_simulator/runs/static_residual/metrics.json",
+      "sha256": "70c8152c72575cc85b0acc0a68ba37d2fa4cd8a3331936971a66b636789e0e4c",
+      "bytes": 2400
+    },
+    {
+      "source": "experiments/blendshape_robot_flame_simulator/runs/temporal_scratch/metrics.json",
+      "sha256": "8125bec26660be1d1b6cb6df504a4a1540ace5484fa5f27874b52f2e01730e40",
+      "bytes": 2393
+    },
+    {
+      "source": "experiments/blendshape_robot_flame_simulator/runs/static_temporal/metrics.json",
+      "sha256": "8fbffc6fdc81523c7263bcd3dc214a31ece3ff18efb77bafc66015fceb5b496c",
+      "bytes": 2399
+    },
+    {
+      "source": "experiments/blendshape_robot_flame_simulator/runs/static_temporal_history1/metrics.json",
+      "sha256": "1965b47ea0f8e49765789cf111a9b72026646f694509e2d2e4005afbfb42712f",
+      "bytes": 2414
+    },
+    {
+      "source": "experiments/speech_v2_robot_syncnet3d/simulator/metrics.json",
+      "sha256": "bb34c229e00153059ab8441613983e75f49cbc479e1971ccb98235c6d43e0ef0",
+      "bytes": 36210
+    },
+    {
+      "source": "experiments/speech_v2_robot_syncnet3d/simulator/speech_v2_adapted_test_predictions.npz",
+      "sha256": "7c08f8379a591745386315c33841e10076e7bc4570a1453094c6eaf95f0b419e",
+      "bytes": 5386206
+    },
+    {
+      "source": "results/latent_sync_teacher_stabilization/comparison.csv",
+      "sha256": "364969b7a30d4c3493b40f81da4cde408d1cb0bd2289f6b909172208e5ec6dc2",
+      "bytes": 9498
+    },
+    {
+      "source": "results/refiner_teacher_ablation/comparison.csv",
+      "sha256": "bd4b865215900c4623e5398111d66c3678d208035eb681a7686d90c12630464e",
+      "bytes": 12835
+    }
+  ]
+}
