@@ -165,6 +165,8 @@ their asset provenance needs further rights review.
 Python 3.10+; CPU is sufficient for the bundled metric reproduction. In a checkout of this repository:
 
 ```bash
+git clone https://github.com/Fanrito/Robot-Lipsync.git
+cd Robot-Lipsync
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt

@@ -14,6 +14,7 @@ Checks performed on the curated release, not by rerunning model training:
 | Video composition smoke | Two local clips composed without hardware, source mutation or audio |
 | Public media decode | Three MP4s fully decoded; H.264/yuv420p, no audio/subtitle/data streams |
 | Local Markdown links | Existing files and heading targets checked |
+| Public clone smoke test | GitHub clone completed; the same five tests and saved-score reproduction passed in the downloaded tree |
 | Source preservation | 9,669 inventoried source files unchanged in size/mtime; inventoried code/docs and 22 selected sources additionally hashed |
 | Private data scan | No credential-pattern, private-path, private-IP or hardware-identifier matches in selected text files |
 
