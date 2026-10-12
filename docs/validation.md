@@ -32,3 +32,19 @@ legal clearance or a guarantee that every possible privacy issue has been identi
 No GPU training, environment upgrade, robot execution, source-project edit, or original-data deletion
 was performed for the public release. Publication status and remote verification are reported
 separately; local validation must not be mistaken for a successful GitHub upload.
+
+## Pipeline Figure Update (2026-10-12)
+
+The system overview and Simulator architecture were redrawn from the released model and
+protocol notes using `scripts/draw_pipeline.py`. Both figures were visually inspected locally
+and exported as PNG, editable-text SVG and vector PDF. The default PNG dimensions are
+2880x2178 (overview) and 2880x1998 (architecture).
+
+All **8 CPU regression tests** pass: the original five release tests and three new figure tests.
+Figure tests check both text layouts, reject overflowing card text, and verify byte-identical
+PNG/SVG/PDF regeneration in the same environment. The historical five-test public-clone record
+above describes the initial release; it is not a new clone test for this update.
+
+The figure update changes presentation only. No model, metric table, source experiment,
+recording, checkpoint or environment was modified. Hybrid reconstruction and teacher objectives
+remain explicitly marked as weak/exploratory, not as verified physical improvements.

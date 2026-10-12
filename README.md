@@ -5,10 +5,12 @@
 From audio-driven blendshapes to a physical robot: measuring audiovisual timing,
 learning a differentiable facial-motion surrogate, and testing constrained 2D visual priors.
 
-[![Real robot, Hybrid target, frozen Simulator V1, Speech-v2 adapted Simulator](assets/images/speech_natural.jpg)](assets/videos/speech_natural.mp4)
+[![Robot-Lipsync research pipeline: timestamped physical execution, differentiable Robot-FLAME, and separate synchronization / visual-teacher objectives](assets/figures/robot_lipsync_pipeline.png)](assets/figures/robot_lipsync_pipeline.svg)
 
-**Left to right:** real Noetix robot | Hybrid weak target | frozen V1 | Speech-v2 adapted Simulator.
-[Watch the motion comparison](assets/videos/speech_natural.mp4). Public clips are muted research illustrations, not listening tests.
+**Research pipeline.** Blue: physical acquisition and 2D sync. Teal: differentiable geometry and
+3D sync. Ochre: weak reconstruction supervision and exploratory 2D-teacher objectives.
+[Editable SVG](assets/figures/robot_lipsync_pipeline.svg) / [Vector PDF](assets/figures/robot_lipsync_pipeline.pdf)
+/ [Figure source and reading guide](docs/pipeline_figures.md).
 
 This is a **curated research showcase**, not a complete training release or a turnkey robot controller.
 It includes original temporal-model code, selected evaluation tools, reproducible metric tables,
@@ -24,24 +26,6 @@ The research separates three questions:
 - **Is the video synchronized?** Sequence-level audiovisual offset search, with spatial-input and domain-transfer controls.
 - **What motion will the robot produce?** A differentiable 51D command-history-to-FLAME surrogate, supervised by weak reconstructions of real robot video.
 - **Can a 2D teacher improve articulation?** Bounded mouth/jaw residuals, tested against amplitude, dynamics, and synchronization shortcuts.
-
-```mermaid
-flowchart LR
-    A[Speech audio] --> B[Audio2Face: 51D at 30 Hz]
-    B --> C[Logged 3-to-1 selection: actual 10 Hz commands]
-    C --> D[Fixed vendor mapping and physical robot]
-    D --> V[Camera video with recorded timestamps]
-    A --> Q[2D SyncNet: sequence offset evaluation]
-    V --> Q
-    C --> S[Static prior + robot adapter + temporal residual]
-    S --> F[Fixed-identity FLAME geometry]
-    V --> H[MICA ID + EMOCA expression + DECA jaw/pose]
-    H -. weak supervision .-> S
-    A --> L[Robot-SyncNet3D evaluation / temporal guard]
-    F --> L
-    F --> R[Differentiable rendering]
-    T[LatentSync 2D teacher + lipreading features] -. constrained exploratory loss .-> R
-```
 
 The vendor blendshape-to-motor mapping is unchanged. There is no motor-to-blendshape inversion.
 LatentSync remains a **2D teacher**, not the current SyncNet3D positive-motion source.
@@ -78,13 +62,10 @@ the 25 ms result above. Both records are retained in [the evidence tables](resul
 
 ## Differentiable Robot-FLAME
 
-```text
-51D blendshape command history (12 steps at 10 Hz) + measured interval phase
-    -> frozen MediaPipe-to-FLAME static prior
-    -> robot-specific static adapter + dilated TCN residual
-    -> 50D expression + 3D jaw
-    -> fixed MICA identity + FLAME2020 (5023 vertices)
-```
+[![Robot-FLAME architecture: name-based static mapping and robot adapter, summed with a history-and-phase TCN residual, followed by fixed-identity FLAME2020](assets/figures/robot_flame_simulator.png)](assets/figures/robot_flame_simulator.svg)
+
+[Editable SVG](assets/figures/robot_flame_simulator.svg) / [Vector PDF](assets/figures/robot_flame_simulator.pdf).
+The two branches separate static amplitude/semantic calibration from history-dependent dynamics.
 
 The original project TCN uses dilations **1, 2, 4, 8**, explicit phase features, and bounded
 expression/jaw residual heads. Name-based channel conversion is included: Noetix has ARKit's
@@ -114,6 +95,12 @@ All amplitude ratios here use the **98th-minus-2nd percentile span**, prediction
 ![Two held-out speech trajectories](assets/plots/speech_motion_curves.png)
 
 ### More Motion Examples
+
+[![Real robot, Hybrid target, frozen Simulator V1, Speech-v2 adapted Simulator](assets/images/speech_natural.jpg)](assets/videos/speech_natural.mp4)
+
+Natural speech, left to right: real Noetix robot | Hybrid weak target | frozen V1 |
+Speech-v2 adapted Simulator. [Watch the motion comparison](assets/videos/speech_natural.mp4).
+Public clips are muted research illustrations, not listening tests.
 
 [![Controlled six-way comparison](assets/images/controlled.jpg)](assets/videos/controlled.mp4)
 
@@ -175,6 +162,7 @@ python scripts/evaluate_sync.py \
   --test results/sync2d_test_curves.csv \
   --output outputs/recomputed_sync.json
 python scripts/plot_results.py
+python scripts/draw_pipeline.py
 ```
 
 Expected metric reproduction: **AUC 0.9505208333; balanced accuracy 0.8958333333; MAE 25 ms**.
@@ -205,9 +193,9 @@ src/robot_flame/     Original predictor, channel schema, static adapters and TCN
 src/syncnet/         Model-injected full-sequence inference wrapper
 src/evaluation/      Geometry and validation-calibrated sync metrics
 src/visualization/   File-only side-by-side utility
-scripts/            Standalone evaluation, plotting, inference and smoke-test CLIs
+scripts/            Evaluation, plots, editable diagrams, inference and smoke-test CLIs
 results/            Small tables, evidence JSONs, curves and provenance hashes
-assets/             Three muted MP4s, JPEG previews and regenerable plots
+assets/             Muted MP4s, previews, metric plots and SVG/PNG/PDF pipeline figures
 docs/               Protocol definitions, experiment boundaries and release scope
 tests/              CPU regression tests, including split-leakage rejection
 ```
