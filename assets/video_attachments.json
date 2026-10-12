@@ -1,0 +1,22 @@
+{
+  "archive_issue": "https://github.com/Fanrito/Robot-Lipsync/issues/1",
+  "upload_method": "Official GitHub CLI --attach",
+  "audio": "None; byte-identical to existing muted public repository MP4s",
+  "videos": [
+    {
+      "file": "assets/videos/speech_natural.mp4",
+      "attachment_url": "https://github.com/user-attachments/assets/db7dccbc-44d1-4853-b7e2-90696e19d9d9",
+      "sha256": "ddefbe0e3ad11a2959590b88a1f58cdf518f7180ff617d982a8e73b1c066e805"
+    },
+    {
+      "file": "assets/videos/speech_bilabial.mp4",
+      "attachment_url": "https://github.com/user-attachments/assets/5aa05ffa-32d4-44b0-b468-e7e53cc524b0",
+      "sha256": "443fbf5d2364eaac75db045d77cfeefeb38bb1e64e8032671314f7011aa41080"
+    },
+    {
+      "file": "assets/videos/controlled.mp4",
+      "attachment_url": "https://github.com/user-attachments/assets/f94fb78c-da56-4ce8-bf39-e8ce541b5079",
+      "sha256": "956b6337b0297b6e0e8e3c9e1d58ddd7dfa33e5738c4e960e4163efb2a6f7ae2"
+    }
+  ]
+}

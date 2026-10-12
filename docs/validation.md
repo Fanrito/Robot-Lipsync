@@ -48,3 +48,18 @@ above describes the initial release; it is not a new clone test for this update.
 The figure update changes presentation only. No model, metric table, source experiment,
 recording, checkpoint or environment was modified. Hybrid reconstruction and teacher objectives
 remain explicitly marked as weak/exploratory, not as verified physical improvements.
+
+## Native README Videos (2026-10-12)
+
+The three existing muted MP4s were attached using GitHub CLI and linked near the top of the
+README. Anonymous attachment downloads matched the tracked media SHA256 hashes byte for byte;
+all repository originals are H.264 video-only files. No new raw recording or audio was published.
+
+GitHub's official Markdown rendering API returned **three matching `<video controls>` players**,
+including the controlled clip inside its collapsed section. Only the stable attachment URLs
+are committed, not the temporary signed playback URLs returned in rendered HTML. This checks
+server-side player generation and public file access; it is not a manual browser playback test.
+
+All **9 CPU regression tests** pass, including a new attachment/provenance/README-placement check.
+Relative links and anchors were checked. Model code, numeric evidence, pipeline figures and
+original media files remain unchanged.

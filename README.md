@@ -5,6 +5,41 @@
 From audio-driven blendshapes to a physical robot: measuring audiovisual timing,
 learning a differentiable facial-motion surrogate, and testing constrained 2D visual priors.
 
+## Video Demos
+
+Real robot motion alongside its differentiable Simulator. These are **muted research
+illustrations**, not listening tests; Hybrid targets are weak reconstructions, not measured 3D GT.
+
+**Natural speech (6 s).** Left to right: real Noetix robot | Hybrid weak target |
+frozen V1 | Speech-v2 adapted Simulator.
+
+https://github.com/user-attachments/assets/db7dccbc-44d1-4853-b7e2-90696e19d9d9
+
+[Open repository MP4](assets/videos/speech_natural.mp4)
+
+**Bilabial speech (4 s).** Same column order; held-out speech with dense lip-closure events.
+
+https://github.com/user-attachments/assets/5aa05ffa-32d4-44b0-b468-e7e53cc524b0
+
+[Open repository MP4](assets/videos/speech_bilabial.mp4)
+
+<details>
+<summary><strong>Controlled motion: six-way comparison (24 s)</strong></summary>
+
+Left to right: real robot | Hybrid weak target | pretrained static | static + static residual |
+temporal scratch | static + temporal residual.
+
+https://github.com/user-attachments/assets/f94fb78c-da56-4ce8-bf39-e8ce541b5079
+
+[Open repository MP4](assets/videos/controlled.mp4)
+
+</details>
+
+Video provenance and column order: [media manifest](assets/media_manifest.json).
+Embedding and playback notes: [video guide](docs/video_demos.md).
+
+## Research Pipeline
+
 [![Robot-Lipsync research pipeline: timestamped physical execution, differentiable Robot-FLAME, and separate synchronization / visual-teacher objectives](assets/figures/robot_lipsync_pipeline.png)](assets/figures/robot_lipsync_pipeline.svg)
 
 **Research pipeline.** Blue: physical acquisition and 2D sync. Teal: differentiable geometry and
@@ -94,24 +129,9 @@ All amplitude ratios here use the **98th-minus-2nd percentile span**, prediction
 ![Simulator ablation and speech adaptation](assets/plots/simulator_summary.png)
 ![Two held-out speech trajectories](assets/plots/speech_motion_curves.png)
 
-### More Motion Examples
-
-[![Real robot, Hybrid target, frozen Simulator V1, Speech-v2 adapted Simulator](assets/images/speech_natural.jpg)](assets/videos/speech_natural.mp4)
-
-Natural speech, left to right: real Noetix robot | Hybrid weak target | frozen V1 |
-Speech-v2 adapted Simulator. [Watch the motion comparison](assets/videos/speech_natural.mp4).
-Public clips are muted research illustrations, not listening tests.
-
-[![Controlled six-way comparison](assets/images/controlled.jpg)](assets/videos/controlled.mp4)
-
-Controlled test: real robot | Hybrid target | static prior | static residual | temporal scratch |
-static + temporal residual. [Watch 24-second excerpt](assets/videos/controlled.mp4).
-
-[![Bilabial speech comparison](assets/images/speech_bilabial.jpg)](assets/videos/speech_bilabial.mp4)
-
-Held-out bilabial speech: real robot | Hybrid target | frozen V1 | Speech-v2 adapted.
-[Watch the full review clip](assets/videos/speech_bilabial.mp4).
-See [media provenance and column order](assets/media_manifest.json).
+The [video demos above](#video-demos) show held-out natural/bilabial speech and the controlled
+six-way ablation. The [media manifest](assets/media_manifest.json) preserves source provenance,
+exact column order and excerpt scope; display fps is not used to recover command timestamps.
 
 ## 3D Synchronization and 2D Teachers: What Is Not Solved
 
